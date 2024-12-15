@@ -21,6 +21,10 @@
     <option th:each="tempCountry: ${countries}" th:text="${tempCountry}" th:value="${tempCountry}"/>
     <!--    The code above comes from the showForm method, it uses values from resource.properties and inserts them on the country attribute from the select tag above-->
 </select>
+    <br><br>
+    <input th:each="tempFavLanguage: ${favLanguages}" th:field="*{favLanguage}" th:text="${tempFavLanguage}"
+           th:value="${tempFavLanguage}"
+           type="radio"/>
 
     <br><br>
 
