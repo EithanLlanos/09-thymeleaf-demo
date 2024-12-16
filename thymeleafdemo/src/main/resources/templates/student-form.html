@@ -22,9 +22,14 @@
     <!--    The code above comes from the showForm method, it uses values from resource.properties and inserts them on the country attribute from the select tag above-->
 </select>
     <br><br>
-    <input th:each="tempLanguage: ${languages}" th:field="*{favLanguage}" th:text="${tempLanguage}"
-           th:value="${tempLanguage}"
-           type="radio"/>
+    Language: <input th:each="tempLanguage: ${languages}" th:field="*{favLanguage}" th:text="${tempLanguage}"
+                     th:value="${tempLanguage}"
+                     type="radio"/>
+
+    <br><br>
+
+    Favorite Systems: <input th:each="tempSystem: ${opSystems}" th:field="*{favSystems}" th:text="${tempSystem}"
+                             th:value="${tempSystem}" type="checkbox"/>
 
     <br><br>
 

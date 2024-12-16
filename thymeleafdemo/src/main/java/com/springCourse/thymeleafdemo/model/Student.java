@@ -1,10 +1,13 @@
 package com.springCourse.thymeleafdemo.model;
 
+import java.util.List;
+
 public class Student {
     private String firstName;
     private String lastName;
     private String country;
     private String favLanguage;
+    private List<String> favSystems;
 
     public Student() {
 
@@ -42,4 +45,13 @@ public class Student {
     public void setFavLanguage(String favLanguage) {
         this.favLanguage = favLanguage;
     }
+
+    public List<String> getFavSystems() {
+        return favSystems;
+    }
+
+    public void setFavSystems(List<String> favSystems) {
+        this.favSystems = favSystems;
+    }
+    
 }
